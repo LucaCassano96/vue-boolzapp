@@ -9,96 +9,111 @@
     <title>vue-boolzapp</title>
 </head>
 <body>
+    <div id="app">
 
-    <header>
+            <header>
 
-        <div class="left_bar">
+                <div class="left_bar">
 
-            <div class="name_user">
-                <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="nome user">
-                <span>Luca Cassano</span>
-            </div>
-            <div class="tools_user">
-                <i class="fa-solid fa-spinner"></i>
-                <i class="fa-solid fa-message"></i>
-                <i class="fa-solid fa-ellipsis-vertical"></i>
-            </div>
-
-        </div>
-
-        <div class="right_bar">
-            <div class="name_user">
-                <img src="https://static-00.iconduck.com/assets.00/profile-circle-icon-512x512-dt9lf8um.png" alt="nome user">
-                <div class="chat_opened">
-
-                    <div>Chat in corso</div>
-                    <div>Ultimo Accesso</div>
+                    <div class="name_user">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="nome user">
+                        <span>Luca Cassano</span>
+                    </div>
+                    <div class="tools_user">
+                        <i class="fa-solid fa-spinner"></i>
+                        <i class="fa-solid fa-message"></i>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
 
                 </div>
+
+                <div class="right_bar">
+                    <div class="name_user">
+                        <img src="https://static-00.iconduck.com/assets.00/profile-circle-icon-512x512-dt9lf8um.png" alt="nome user">
+                        <div class="chat_opened">
+
+                            <div>Chat in corso</div>
+                            <div>Ultimo Accesso</div>
+
+                        </div>
+                        
+                    </div>
+                    <div class="tools_user">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <i class="fa-solid fa-paperclip"></i>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                    
+                </div>
+            </header>
+
+            <main>
+
+                <nav>
+
+                <div class="notifications">
+                        <div class="bell">
+                            <i class="fa-solid fa-bell-slash"></i>
+                        </div>
+
+                        <div class="chat_opened">
+                            <div>Ricevi notifiche di nuovi messaggi</div>
+                            <a href="#">attiva notifiche Descktop</a>
+                        </div>
                 
-            </div>
-            <div class="tools_user">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <i class="fa-solid fa-paperclip"></i>
-                <i class="fa-solid fa-ellipsis-vertical"></i>
-            </div>
-            
-        </div>
-    </header>
-
-    <main>
-
-        <nav>
-
-           <div class="notifications">
-                <div class="bell">
-                    <i class="fa-solid fa-bell-slash"></i>
                 </div>
 
-                <div class="chat_opened">
-                    <div>Ricevi notifiche di nuovi messaggi</div>
-                    <a href="#">attiva notifiche Descktop</a>
+                <div class="search-input">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="  cerca o inizia una nuova chat">
+
                 </div>
+
+                <!-- contacts bar nav -->
+
+                
+
+                        <div class="contacts">
         
-           </div>
+                            <div class="contact" v-for ="NameAndImg in contacts" >
+                                <img :src="NameAndImg.avatar" alt="">
+                                <div>{{NameAndImg.name}}</div>
+                            </div>
+                            
+                        </div>
 
-           <div class="search-input">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <input type="text" placeholder="  cerca o inizia una nuova chat">
+                
 
-           </div>
-           
+                </nav>
 
-        </nav>
+                <div id="main_app">
 
-        <div id="main_app">
+                    <div id="chat">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa commodi ea, aliquam iste minus esse saepe cumque fuga voluptatem voluptates. Molestiae fugit exercitationem saepe nihil. Modi alias ex necessitatibus Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, dolor! Consequatur voluptatum consectetur aperiam. Voluptas unde enim laudantium id aliquid consequatur quo quidem aperiam a vero? Quaerat harum itaque tempora.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa commodi ea, aliquam iste minus esse saepe cumque fuga voluptatem voluptates. Molestiae fugit exercitationem saepe nihil. Modi alias ex necessitatibus Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, dolor! Consequatur voluptatum consectetur aperiam. Voluptas unde enim laudantium id aliquid consequatur quo quidem aperiam a vero? Quaerat harum itaque tempora.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa commodi ea, aliquam iste minus esse saepe cumque fuga voluptatem voluptates. Molestiae fugit exercitationem saepe nihil. Modi alias ex necessitatibus Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, dolor! Consequatur voluptatum consectetur aperiam. Voluptas unde enim laudantium id aliquid consequatur quo quidem aperiam a vero? Quaerat harum itaque tempora.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa commodi ea, aliquam iste minus esse saepe cumque fuga voluptatem voluptates. Molestiae fugit exercitationem saepe nihil. Modi alias ex necessitatibus Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, dolor! Consequatur voluptatum consectetur aperiam. Voluptas unde enim laudantium id aliquid consequatur quo quidem aperiam a vero? Quaerat harum itaque tempora.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa commodi ea, aliquam iste minus esse saepe cumque fuga voluptatem voluptates. Molestiae fugit exercitationem saepe nihil. Modi alias ex necessitatibus Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, dolor! Consequatur voluptatum consectetur aperiam. Voluptas unde enim laudantium id aliquid consequatur quo quidem aperiam a vero? Quaerat harum itaque tempora.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa commodi ea, aliquam iste minus esse saepe cumque fuga voluptatem voluptates. Molestiae fugit exercitationem saepe nihil. Modi alias ex necessitatibus Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, dolor! Consequatur voluptatum consectetur aperiam. Voluptas unde enim laudantium id aliquid consequatur quo quidem aperiam a vero? Quaerat harum itaque tempora.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa commodi ea, aliquam iste minus esse saepe cumque fuga voluptatem voluptates. Molestiae fugit exercitationem saepe nihil. Modi alias ex necessitatibus Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, dolor! Consequatur voluptatum consectetur aperiam. Voluptas unde enim laudantium id aliquid consequatur quo quidem aperiam a vero? Quaerat harum itaque tempora.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa commodi ea, aliquam iste minus esse saepe cumque fuga voluptatem voluptates. Molestiae fugit exercitationem saepe nihil. Modi alias ex necessitatibus Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, dolor! Consequatur voluptatum consectetur aperiam. Voluptas unde enim laudantium id aliquid consequatur quo quidem aperiam a vero? Quaerat harum itaque tempora.
+                    </div>
+                    <div id="write_new_chat">
 
-            <div id="chat">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa commodi ea, aliquam iste minus esse saepe cumque fuga voluptatem voluptates. Molestiae fugit exercitationem saepe nihil. Modi alias ex necessitatibus Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, dolor! Consequatur voluptatum consectetur aperiam. Voluptas unde enim laudantium id aliquid consequatur quo quidem aperiam a vero? Quaerat harum itaque tempora.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa commodi ea, aliquam iste minus esse saepe cumque fuga voluptatem voluptates. Molestiae fugit exercitationem saepe nihil. Modi alias ex necessitatibus Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, dolor! Consequatur voluptatum consectetur aperiam. Voluptas unde enim laudantium id aliquid consequatur quo quidem aperiam a vero? Quaerat harum itaque tempora.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa commodi ea, aliquam iste minus esse saepe cumque fuga voluptatem voluptates. Molestiae fugit exercitationem saepe nihil. Modi alias ex necessitatibus Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, dolor! Consequatur voluptatum consectetur aperiam. Voluptas unde enim laudantium id aliquid consequatur quo quidem aperiam a vero? Quaerat harum itaque tempora.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa commodi ea, aliquam iste minus esse saepe cumque fuga voluptatem voluptates. Molestiae fugit exercitationem saepe nihil. Modi alias ex necessitatibus Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, dolor! Consequatur voluptatum consectetur aperiam. Voluptas unde enim laudantium id aliquid consequatur quo quidem aperiam a vero? Quaerat harum itaque tempora.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa commodi ea, aliquam iste minus esse saepe cumque fuga voluptatem voluptates. Molestiae fugit exercitationem saepe nihil. Modi alias ex necessitatibus Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, dolor! Consequatur voluptatum consectetur aperiam. Voluptas unde enim laudantium id aliquid consequatur quo quidem aperiam a vero? Quaerat harum itaque tempora.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa commodi ea, aliquam iste minus esse saepe cumque fuga voluptatem voluptates. Molestiae fugit exercitationem saepe nihil. Modi alias ex necessitatibus Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, dolor! Consequatur voluptatum consectetur aperiam. Voluptas unde enim laudantium id aliquid consequatur quo quidem aperiam a vero? Quaerat harum itaque tempora.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa commodi ea, aliquam iste minus esse saepe cumque fuga voluptatem voluptates. Molestiae fugit exercitationem saepe nihil. Modi alias ex necessitatibus Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, dolor! Consequatur voluptatum consectetur aperiam. Voluptas unde enim laudantium id aliquid consequatur quo quidem aperiam a vero? Quaerat harum itaque tempora.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa commodi ea, aliquam iste minus esse saepe cumque fuga voluptatem voluptates. Molestiae fugit exercitationem saepe nihil. Modi alias ex necessitatibus Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, dolor! Consequatur voluptatum consectetur aperiam. Voluptas unde enim laudantium id aliquid consequatur quo quidem aperiam a vero? Quaerat harum itaque tempora.
-            </div>
-            <div id="write_new_chat">
+                        <i class="fa-regular fa-face-smile"></i>
+                        <input type="text" placeholder="  Scrivi un messaggio">
+                        <i class="fa-solid fa-paper-plane"></i>
 
-                <i class="fa-regular fa-face-smile"></i>
-                <input type="text" placeholder="  Scrivi un messaggio">
-                <i class="fa-solid fa-paper-plane"></i>
+                    </div>
 
-            </div>
+                </div>
 
-        </div>
-
-      
+            
 
 
-    </main>
+            </main>
 
-    
+    </div>    
 
     
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
