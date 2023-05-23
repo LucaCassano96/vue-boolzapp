@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+header{
+    width: 100%;
+    height: 80px;
+    background-color: #fff;
+    background-color: chocolate;
+    display: flex;
+}
+
+.left_bar{
+    width: 25%;
+    height: 80px;
+    background-color: cyan;
+}
+
+.right_bar{
+    width: 75%;
+    height: 80px;
+    background-color:darkorchid;
+}
+
+main{
+    display: flex;
+}
+
+nav{
+    width: 25%;
+    height: calc(100vh - 80px);
+    background-color: brown;
+   overflow-y: scroll;
+   font-size: 24px;
+}
+
+#main_app{
+    width: 75%;
+    height: calc(100vh - 80px);
+}
+
+#chat{
+    width: 100%;
+    height: calc(100vh - 160px);
+    background-color: aqua;
+    overflow-y: scroll;
+    font-size: 24px;
+}
+
+#write_new_chat{
+    width: 100%;
+    height: 80px;
+    background-color: blue;
+}
+
