@@ -9,20 +9,53 @@ header{
     width: 100%;
     height: 80px;
     background-color: #fff;
-    background-color: chocolate;
     display: flex;
+    background-color: rgb(235, 234, 234);
 }
 
 .left_bar{
     width: 25%;
     height: 80px;
-    background-color: cyan;
+    display: flex;
+    justify-content: space-between;
+    border-right: 2px solid gray;
 }
 
 .right_bar{
     width: 75%;
     height: 80px;
-    background-color:darkorchid;
+    display: flex;
+    justify-content: space-between;
+}
+
+.name_user, .tools_user{
+    min-width: 50px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name_user img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin-left: 15px;
+}
+
+
+.name_user span{
+    padding-left: 10px;
+}
+
+.chat_opened{
+    padding-left: 10px ;
+}
+
+.tools_user i{
+    padding-right: 15px;
+    color: darkgrey;
+    font-size: 25px;
 }
 
 main{
