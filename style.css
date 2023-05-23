@@ -14,7 +14,7 @@ header{
 }
 
 .left_bar{
-    width: 25%;
+    width: 30%;
     height: 80px;
     display: flex;
     justify-content: space-between;
@@ -22,7 +22,7 @@ header{
 }
 
 .right_bar{
-    width: 75%;
+    width: 70%;
     height: 80px;
     display: flex;
     justify-content: space-between;
@@ -52,10 +52,18 @@ header{
     padding-left: 10px ;
 }
 
-.tools_user i{
+.chat_opened a{
+    color:   rgb(205, 205, 205);
+}
+
+.tools_user i, .search-input i, #write_new_chat i{
     padding-right: 15px;
     color: darkgrey;
     font-size: 25px;
+}
+
+.tools_user i:hover,.search-input i:hover, #write_new_chat i:hover {
+    color: rgb(138, 138, 138);
 }
 
 main{
@@ -63,15 +71,45 @@ main{
 }
 
 nav{
-    width: 25%;
+    width: 30%;
     height: calc(100vh - 80px);
     background-color: brown;
-   overflow-y: scroll;
-   font-size: 24px;
+    overflow-y: scroll;
+}
+
+.notifications{
+    width: 100%;
+    height: 70px;
+    background-color: rgb(59, 169, 206);
+    display: flex;
+    padding: 15px;
+}
+
+.bell i{
+    padding: 10px 8px;
+    background-color: #fff;
+    border-radius: 100%;
+    color:rgb(59, 169, 206);
+    background-color:   rgb(235, 234, 234);
+}
+
+.search-input{
+    display: flex;
+    background-color:  rgb(235, 234, 234);
+    align-items: center;
+    padding: 15px;
+}
+
+.search-input input{
+    width: 300px;
+    height: 30px;
+    margin-left: 10px;
+    border-radius: 10px;
+    border-color: rgba(48, 186, 228, 0.5);
 }
 
 #main_app{
-    width: 75%;
+    width: 70%;
     height: calc(100vh - 80px);
 }
 
@@ -81,11 +119,25 @@ nav{
     background-color: aqua;
     overflow-y: scroll;
     font-size: 24px;
+    background-image:url("https://www.birlawhite.com/storage/blogs/October2022/shutterstock_601690796-min.jpg");
+    object-fit: cover;
 }
 
 #write_new_chat{
     width: 100%;
     height: 80px;
-    background-color: blue;
+    background-color: rgb(235, 234, 234);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5px;
+}
+
+#write_new_chat input{
+    width: 900px;
+    height: 40px;
+    margin-left: 10px;
+    border-radius: 5px;
+    border-color: rgba(48, 186, 228, 0.5);
 }
 
