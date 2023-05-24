@@ -1,7 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif; ;
 }
 
 
@@ -138,25 +144,46 @@ nav{
     height: calc(100vh - 80px);
 }
 
-#chat{
+#chat_container{
     width: 100%;
     height: calc(100vh - 160px);
     overflow-y: scroll;
-    font-size: 24px;
-    background-image:url("https://www.birlawhite.com/storage/blogs/October2022/shutterstock_601690796-min.jpg");
-    object-fit: cover;
+    font-size: 20px;
+    background-image:url("https://wpuploads.appadvice.com/wp-content/uploads/2015/01/WhatsApp.png");
+    object-fit: contain;
+}
+
+.chat{
+    width: 700px;
+    min-height: 70px;
+    margin: 50px auto;
+    position: relative;
+    color: #fff;
+   
 }
 
 .sent{
-    width: 200px ;
-    height: 200px;
-    background-color: greenyellow;
+    width: 250px ;
+    min-height: 30px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(16, 174, 16);
+    position: absolute;
+    right: 0;
+
+    
 }
 
 .recived{
-    width: 200px ;
-    height: 200px;
-    background-color: aquamarine;
+    width: 250px ;
+    min-height: 30px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(146, 146, 146);
+    position: absolute;
+    left: 0;
+   
+
 }
 
 #write_new_chat{

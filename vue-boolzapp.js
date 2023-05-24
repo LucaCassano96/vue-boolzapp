@@ -184,16 +184,7 @@ createApp({
              this.activelement = idx;
 
         }
-    },
-            /* SentOrRecived(){
-                if ( this.contacts[activelement].messages.status === 'sent') {
-                    
-                    return "sent";
-                }
-                else{
-                    return "recived";
-                }
-            } */
+    }
     
     
 }).mount("#app")

@@ -87,14 +87,16 @@
 
                 <div id="main_app">
 
-                    <div id="chat">
-                        <div v-for="message in contacts[activelement].messages ">
-                            
-                            <div :class ="message.status === 'sent'  ? 'sent' : 'recived'">
-                                {{message.message}}</div>
-                            
-                            
-                        </div>
+                    <div id="chat_container">
+                        
+                            <div class="chat" v-for="message in contacts[activelement].messages ">
+                                
+                                <div :class ="message.status === 'sent'  ? 'sent' : 'recived'">
+                                    {{message.message}}</div>
+                                
+                                
+                            </div>
+
                     </div>
                     <div id="write_new_chat">
 
