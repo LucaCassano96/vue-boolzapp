@@ -5,7 +5,7 @@ createApp({
 
     data(){
         return{
-
+            activelement: 0,
             contacts: [
                         {
                             name: 'Michele',
@@ -158,7 +158,7 @@ createApp({
                                 },
                                 {
                                     date: '10/01/2020 15:50:00',
-                                    message: 'No, l\'ho già mangiata ieri, ordiniamo sushi!',
+                                    message: 'No, l ho già mangiata ieri, ordiniamo sushi!',
                                     status: 'sent'
                                 },
                                 {
@@ -177,5 +177,23 @@ createApp({
 
 
         }
-    }
+    },
+    methods : {
+        
+            changeChat(idx){
+             this.activelement = idx;
+
+        }
+    },
+            /* SentOrRecived(){
+                if ( this.contacts[activelement].messages.status === 'sent') {
+                    
+                    return "sent";
+                }
+                else{
+                    return "recived";
+                }
+            } */
+    
+    
 }).mount("#app")

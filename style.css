@@ -141,11 +141,22 @@ nav{
 #chat{
     width: 100%;
     height: calc(100vh - 160px);
-    background-color: aqua;
     overflow-y: scroll;
     font-size: 24px;
     background-image:url("https://www.birlawhite.com/storage/blogs/October2022/shutterstock_601690796-min.jpg");
     object-fit: cover;
+}
+
+.sent{
+    width: 200px ;
+    height: 200px;
+    background-color: greenyellow;
+}
+
+.recived{
+    width: 200px ;
+    height: 200px;
+    background-color: aquamarine;
 }
 
 #write_new_chat{
