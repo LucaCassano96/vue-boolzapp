@@ -6,6 +6,7 @@ createApp({
     data(){
         return{
             activelement: 0,
+            newMessage : "",
             contacts: [
                         {
                             name: 'Michele',
@@ -170,21 +171,28 @@ createApp({
                         }
             ]
             
-            
-
-
-
-
+    
 
         }
     },
-    methods : {
-        
-            changeChat(idx){
-             this.activelement = idx;
+    methods: {
 
+         changeChat(idx){
+            this.activelement = idx;
+        },
+
+        sendMessage(){
+            if (this.newMessage !== "") {
+                const answer ={
+                    message: this.newMessage,
+                    status: 'sent'
+                }
+                /* this.contacts.message.push(answer); */
+            }
         }
     }
+
+    
     
     
 }).mount("#app")
