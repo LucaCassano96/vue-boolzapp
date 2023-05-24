@@ -182,13 +182,21 @@ createApp({
         },
 
         sendMessage(){
-            if (this.newMessage !== "") {
-                const answer ={
-                    message: this.newMessage,
-                    status: 'sent'
-                }
-                /* this.contacts.message.push(answer); */
+            if (this.newMessage == "") return
+            let answer = {
+                message: this.newMessage,
+                status: 'sent'
             }
+           
+            this.contacts[this.activelement].messages.push(answer);
+            this.newMessage = "";
+
+            const botAnswer = {
+                message: "ciao",
+                status: "recived"
+            }
+            this.contacts[this.activelement].messages.push(botAnswer);
+            
         }
     }
 

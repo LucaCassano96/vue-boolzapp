@@ -33,6 +33,9 @@
                         <div class="chat_opened">
                             {{contacts[activelement].name}}
                         </div>
+                        <!-- <div v-for="message in contacts[activelement].messages.length ">
+                            {{message.length}}
+                        </div>  -->
                         
                     </div>
                     <div class="tools_user">
@@ -92,7 +95,9 @@
                             <div class="chat" v-for="message in contacts[activelement].messages ">
                                 
                                 <div :class ="message.status === 'sent'  ? 'sent' : 'recived'">
-                                    {{message.message}}</div>
+                                    {{message.message}}
+                                    <div class="date">{{message.date}}</div>
+                                </div>
                                 
                             </div>
 
@@ -100,7 +105,7 @@
                     <div id="write_new_chat">
 
                         <i class="fa-regular fa-face-smile"></i>
-                        <input  v-model="newMessage" type="text" placeholder="  Scrivi un messaggio">
+                        <input  v-model="newMessage" @keyup.enter="sendMessage" type="text" placeholder="  Scrivi un messaggio">
                         <i @click="sendMessage" class="fa-solid fa-paper-plane"></i>
 
                     </div>
