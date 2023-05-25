@@ -30,12 +30,14 @@
                 <div class="right_bar">
                         <div class="name_user">
                         <img :src="contacts[activelement].avatar" alt="nome user">
-                        <div class="chat_opened">
-                            {{contacts[activelement].name}}
+                        <div>
+                            <div class="chat_opened">
+                                {{contacts[activelement].name}}
+                            </div>
+                            <div class="last_acess">
+                                {{contacts[activelement].messages[contacts[activelement].messages.length - 1].date}} 
+                            </div>  
                         </div>
-                         <!-- <div v-for="message in contacts[activelement].messages.length - 1">
-                            {{message.date}}
-                        </div>   -->
                         
                     </div>
                     <div class="tools_user">
@@ -77,7 +79,12 @@
         
                             <div class="contact" v-for ="(NameAndImg, index) in contacts"  @click="changeChat(index)">
                                 <img :src="NameAndImg.avatar" alt="">
-                                <div>{{NameAndImg.name}}</div>
+                                <div>
+                                    <div>{{NameAndImg.name}}</div>
+                                    <div class="last_acess_nav">
+                                        {{contacts[activelement].messages[contacts[activelement].messages.length - 1].date}} 
+                                    </div>  
+                                </div>
                             </div>
                             
                         </div>

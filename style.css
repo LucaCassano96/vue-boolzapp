@@ -49,6 +49,11 @@ header{
     margin-left: 15px;
 }
 
+.last_acess{
+    padding: 2px 10px;
+    font-size: 12px;
+}
+
 
 .name_user span{
     padding-left: 10px;
@@ -147,6 +152,10 @@ nav{
     object-fit: cover;
     border-radius: 100%;
     margin-right: 10px;
+}
+
+.last_acess_nav{
+    font-size: 12px;
 }
 
 #main_app{
