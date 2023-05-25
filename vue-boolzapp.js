@@ -197,7 +197,8 @@ createApp({
             }
             this.contacts[this.activelement].messages.push(botAnswer);
             
-        }
+        },
+
     }
 
     

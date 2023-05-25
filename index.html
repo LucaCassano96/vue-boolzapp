@@ -22,7 +22,7 @@
                     <div class="tools_user">
                         <i class="fa-solid fa-spinner"></i>
                         <i class="fa-solid fa-message"></i>
-                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                        <i class="fa-solid fa-ellipsis-vertical menu_left_bar"></i>
                     </div>
 
                 </div>
@@ -33,9 +33,9 @@
                         <div class="chat_opened">
                             {{contacts[activelement].name}}
                         </div>
-                        <!-- <div v-for="message in contacts[activelement].messages.length ">
-                            {{message.length}}
-                        </div>  -->
+                         <!-- <div v-for="message in contacts[activelement].messages.length - 1">
+                            {{message.date}}
+                        </div>   -->
                         
                     </div>
                     <div class="tools_user">
@@ -57,7 +57,7 @@
                         </div>
 
                         <div class="chat_opened">
-                            <div>Ricevi notifiche di nuovi messaggi</div>
+                            <div class="recive_notification">Ricevi notifiche di nuovi messaggi</div>
                             <a href="#">attiva notifiche Descktop</a>
                         </div>
                 

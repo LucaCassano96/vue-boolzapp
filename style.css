@@ -214,8 +214,133 @@ nav{
 #write_new_chat input{
     width: 900px;
     height: 40px;
-    margin-left: 10px;
+    margin: 0 10px;
     border-radius: 5px;
     border-color: rgba(48, 186, 228, 0.5);
+}
+
+@media screen and (max-width:1085px) {
+    
+    .chat{
+        width: 500px;
+    }
+
+    .chat_opened a{
+        display: none;
+    }
+
+    .search-input input{
+        width: 200px;
+    }
+
+    #write_new_chat input{
+        width: 600px;
+        height: 40px;
+    }
+
+    .tools_user i, .search-input i{
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    
+    body{
+        font-size: 14px;
+    }
+
+    .chat{
+        width: 400px;
+    }
+
+    .sent, .recived{
+        width: 200px;
+        font-size: 16px; 
+    }
+    
+
+    .search-input input{
+        width: 150px;
+    }
+
+    .tools_user i, .search-input i{
+        font-size: 15px;
+    }
+
+    .tools_user .fa-spinner{
+        display: none;
+    }
+
+    .recive_notification{
+        font-size: 12px;
+    }
+
+    #write_new_chat input{
+        height: 30px;
+    }
+
+    #write_new_chat .fa-face-smile, #write_new_chat .fa-paper-plane{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 576px){
+    
+    .tools_user .fa-spinner, .tools_user .fa-message, .tools_user .menu_left_bar{
+        display: none;
+    }
+
+
+    .chat{
+        width: 300px;
+    }
+
+    .sent, .recived{
+        width: 150px;
+        font-size: 16px; 
+    }
+
+    .recive_notification{
+        display: none;
+    }
+
+    .notifications{
+       justify-content: center;
+       align-items: center;
+    }
+
+    .search-input{
+        justify-content: center;
+    }
+
+    .search-input input{
+        width: 110px;
+        margin-left: 0px;
+    }
+    
+}
+
+@media screen and (max-width: 480px){
+
+    body{
+        font-size: 12px;
+    }
+
+    .chat{
+        width: 300px;
+    }
+
+    .sent, .recived{
+        width: 250px;
+        font-size: 14px; 
+    }
+
+    .search-input input{
+        width: 90px;
+        margin-left: 0px;
+    }
+    
+
 }
 
